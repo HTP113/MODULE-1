@@ -1,0 +1,69 @@
+.backgroud {
+    background-color: black;
+}
+.font_size img {
+    height: 100px;
+    width: 100px;
+    border: 3px solid orangered;
+}
+.font_size {
+    width: 300px;
+}
+.font_size img{
+    width: 300px;
+    height: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    }
+    /* .row1 {
+        padding-top: 40px;
+    }     */
+.stt {
+    color: lightpink;
+    font-size: 20px;
+}
+.name {
+    color: #FF3399;
+    font-size: 20px;
+}
+.price {
+    color: orange;
+    font-size: 20px;
+}
+.endow p{
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: 2px solid #FF3399;
+    display: inline-block;
+}
+/* .endow p:hover {
+    color: #FF3399;
+} */
+
+#mall {
+    background: red;
+    color: white;
+    padding: 2px 2px;
+}
+.textInfo {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #FF3399;
+}
+.buynow {
+    display: none;
+    color: orange;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 100;
+    text-decoration: none;
+}
+/* .font_size:hover .buynow {
+    display: flex;
+} */

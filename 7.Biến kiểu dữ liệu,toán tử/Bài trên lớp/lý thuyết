@@ -1,0 +1,139 @@
+//toán tử ba ngôi ternary operator
+var course = {
+    name: 'Javascript',
+    coin:250
+}
+// if (course.coin >0) {
+//     console.log(`${course.coin}Coins`);
+// }else {
+//     console.log('Miễn phí');
+//}
+//or 3 ngôi dùng trường hợp đơn giản
+//var result = course.coin > 0 ? `${course.coin} Coins` : 'Miễn phí';
+//console.log(result);
+
+++ kiểu dữ liệu
+/**
+// - Number
+var a = 1;
+var b = 2;
+var b = 1.5;
+console.log(typeof a)
+// string type
+var fullName = 'Son Dang';
+console.log(fullName);
+// Boolean type
+varisSuccess = true;
+
+// undefined type
+var age;
+// null 
+var isNull = null;    
+// Symbol 
+var id = symbal('id');
+var id2= sympol('id');
+console.log
+
+// function 
+var myfunction = function() {
+    alert('Hi')
+}
+// Object types
+var myObject = {
+name: 'son dang'
+age: 18,
+adress: 'ha noi',
+myfunction: function() {
+
+}
+};
+var myArray = [
+    'Javascript',
+    'PHP',
+    'Ruby'
+];
+
+ */
+
+// var a = 1;
+// var b = 2;
+// var b = "aaa";
+// console.log(typeof b)
+
+// var fullName = 'Son Dang';
+// console.log(fullName);
+// // Boolean type
+// varisSuccess = true;
+
+// var age;
+// console.log(typeof age)
+
+// var isNull = null; 
+// console.log(typeof isNull)   (ra Object) 
+
+
+// varisSuccess = true;
+// console.log(typeof isSuccess);
+var myfunction = function() {
+    alert('Hi')
+
+
+    +++ làm việc với chuổi
+    var myString = 'hoc JS tai F8!';
+ **length
+// console.log(myString.length) 
+*find index
+// console.log(myString.indexOf('JS'))  TẠI VT 4
+// console.log(myString.indexOf('Js')) -1
+
+//    console.log(myString.indexOf('JS',6)) TẠI VT 11 (CHẠM JS 2)
+// 
+// console.log(myString.lastIndexOf('JS'))  tại vt dầu tiên 21 sẽ JS cuối MỚI NHẤT
+
+// console.log(myString.search('JS')) trả về 4 vì có 4 js
+*cut string
+// console.log(myString.slice()) cắt lấy chữ JS truyền vào slice 2 tham số bắt đầu và kết thúc
+
+// console.log(myString.slice(4)) cắt lấy chữ  JS tai F8
+// console.log(myString.slice(-3,-1)) cắt f8 đếm phải sang trái
+replace  thay thế chữ js bằng javascript
+// console.log(myString.replace('JS','Javascipt'))
+// var myString = 'hoc JS tai  JS JS F8!';
+// phương thức chính quy thêm /g/ thì replace sẽ đè lên tất cả các từ trùng nhau trong câu
+// 
+convert to uper case chữ hoa
+// console.log(myString.toUpperCase())
+convert to lower case chữ thường
+// console.log(myString.toLowerCase())
+trim  loại bỏ dữ liệu trắng nhập thừa 
+// console.log(myString.trim())
+ split cắt một chuổi thành Array ["J", "a", "v", "a", "s", "c", "r", "i", "p", "t"]
+// var languages = 'Javascript';
+// console.log(languages.split(''))
+// get a character by index lấy một giá trị cho truoc
+const myString2 = 'son dang';
+// console.log(myString2.charAt(0)) or [] sẽ ra untifile nếu13
+
+console.log(typeof myString2.charAt(13))
+
+
+++ làm việc với số 
+/ //  tạo giá trị Number
+//var age = 13;
+// kiểm tra data type
+// console.log(typeof age)
+//làm việc với number
+//to string CHUYỂN ĐỔI kiểu number thành kiểu string
+//seach javascirp number methods
+//console.log(typeOf age.toString()) màu đen số và dùng typeof kiểm tra
+ //var myString = age.toString();
+// console.log(typeOf myString)
+
+
+//TO fixed
+// var age = 13.;
+// console.log(age.toFixed()) ko tryền thì 0 gọi typeOf kiểu string
+// console.log(age.toFixed()) truyền thì 
+// var PI = 3000.2456
+// console.log(PI.toFixed(2)) ra 3000.24 bấm 3 thì ra 3000.245
+

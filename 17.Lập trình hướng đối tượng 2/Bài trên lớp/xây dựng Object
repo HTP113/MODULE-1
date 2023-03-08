@@ -1,0 +1,69 @@
+//Object constructor là bản thiết kế 
+
+function User(firstName,lastName,avatar) {
+this.firstName = firstName;
+this.lastName = lastName;
+this.avatar = avatar;
+}
+// trên là hàm tạo bảng thiết kế thuộc tính và phương thức
+var author = new User('Sơn', 'Đặng', 'Avatar');
+var user = new User('Phương', 'Hà', 'Avatar');
+// 
+// this 2 gọi đối tượng nào thì là đối tượng đó
+this.getName = function () {
+    return `${this.firstName} ${this.lastName}`
+
+}
+//thêm thuộc tính hay phương thức ko ảnh hưởng đến nhau
+ author.title = 'chia sẽ dạo tại F8' ;
+ user.comment = 'liệu có khóa ';
+console.log(author);
+console.log(user);
+
+
+
+//Object prototype-bassi  đối tượng nguyên mẫu
+//prototype là nguyên mẫu ,
+function User(firstName,lastName,avatar) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.avatar = avatar;//có thể add phương thức và thuộc tính
+    
+    this.getName = function () {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+user.prototype.className = 'F8';
+User.prototype.getClassName = function() {
+    return this.className;
+}
+//ĐỐI TƯỢNG DATe truy cập Javascript date object mozila 
+var date = new Date();
+console.log(date.getFullYear());
+var date = Date();
+var year =date.getFullYear();
+var month =date.getMonth() + 1; 
+var hours =date.getHours();
+var minites =date.getMinutes();
+var seconds =date.getSeconds();
+var day =date.getDate();
+
+console.log(d`${day}/${month}/{year}`);
+//math object sau math là dấu chấm 
+Math.PI;tính toán thuộc tính pi
+console.log(Math.PI);
+round làm tròn số số thập phân thành số nguyên 1.8 thành 2
+console.log(Math.round());
+abs giÁ TRỊ TUYỆT ĐỐI biến sô - thành +
+console.log(Math.abs());
+ceil làm tròn trên vd 4.1 thành 5
+console.log(Math.ceil()); 
+ floor làm tròn dưới  vd 4.9 thành 4
+console.log(Math.floor());
+random trả về dãy số or số thập phân nhỏ hơn 1
+var random = Math.floor(Math.random()* 10);
+console.log(Math.floor(Math.random()*10));
+min lấy ra số nhỏ nhất
+console.log(Math.min(-100,1,2,3,45,67));
+max
+console.log(Math.max(-100,1,2,3,45,89,00));

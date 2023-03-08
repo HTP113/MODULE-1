@@ -1,0 +1,59 @@
+/margin : không gian xq , di chuyển L-x-t-p,trong xuốt
+ //và ko có màu nền
+ // thay đổi bên ngoài pt so với pt # ko thay đổi kích thước của pt
+ //chấp nhận số âm và số thực
+<!DOCTYPE html>
+html lang="en">
+head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  .center {
+  margin: auto;// sd auto
+  background: lime;
+  width: 66%;
+  }
+    
+.outside {
+margin: 3rem 0 0 -3rem;
+background: cyan;
+width: 66%;
+  }
+  </style>
+  </head>
+  <body>
+    <h2 style="color:green">GeeksforGeeks</h2>
+    <p class="center">This element is centered.</p>
+    <p class="outside">The element is positioned outside of its corner.</p>
+  </body>
+  </html>
+padding nó là khoảng trống giữa pt và nd liên quan bên trong đó
+{/* thay đổi kc nd bên trong pt so với lề của nó và thay đổi kích thước phần tử  ko chấp nhận giá trị âm  */
+//màu nền phụ thuộc vào element
+<html>
+<head>
+<style>
+h4 {
+ background-color: lime;
+padding: 20px 50px;
+}
+  
+h3 {
+background-color: cyan;
+padding: 90px 20px 10px 200px;
+}
+</style>
+</head>
+<body>
+   <h2 style="color:green">GeeksforGeeks</h2>
+   <h4>This element has moderate padding.</h4>
+   <h3>The padding is huge in this element!</h3> 
+</body>
+</html>
+
+
+</head>
+ </body>
+  </html>

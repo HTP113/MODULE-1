@@ -1,0 +1,123 @@
+// i  viet tắt của index khai báo bằng let có gt bắt đầu = 0 tăng 
++// tăng sau khi lên i++
+//LOOP viết mã ít và tránh lặp lại lặp đi
+// vòng lặp for : lặp đk TRUE
+//** FOR LOOP cách nhâu dấu ;in giá trị từ 1-1000
+   for (var i = 1; i<=1000; i++) { //chạy 1000 lần 
+    console.log(i);
+}
+
+var languages = [
+    'Javascript',
+    'PHP',
+    'Ruby',
+ ];
+ console.log(myArray[0]); // lấy ra javascript
+  //or dùng for
+  var arrayLength = myArray.length;
+  for (var i = 0; i< arrayLength; i++) { 
+    console.log(myArray[i]);
+}
+//for/in lặp qua key
+var languages = [ 
+    'Javascript',
+    'PHP',       
+    'Ruby',
+ ];
+  for (var key in languages) {
+ console.log(key);   // in ra  0,1,2 
+  }
+  console.log(languages[key]);   // in ra 3 java,php,ruby
+  // or in ra chuỗi 
+  var languages = 'Javascript'
+  for (var key in languages) {
+    console.log(key); // có 10 kí tự số 0 - 9
+    console.log(languages[key]); // in ra nhiều chữ cái 
+  }
+// for/of lặp qua value lấy ra chữ cái một chuỗi or mãng
+var languages = [ //cách đơn giản lấy ra từng p tử của mảng
+  'Javascript', //đây là ứng dụng với mảng
+  'PHP',       
+  'Ruby',
+];
+for (var value of languages) {
+  console.log(value);
+}
+ //or lấy ra một chuỗi  chữ javascript
+ var languages = 'Javascript';
+for (var value of languages) {
+  console.log(value);
+}
+// or lấy ra từ Object của key và value
+var myInfo = {
+  name: 'phuong',
+  age:
+};
+for (var value of Object.value(myInfo)) {
+  console.log(value);
+}
+// while  loop lặp đk  true
+var i = 0;  = 1 // chú ý đủ đk ko sẽ bị treo trình duyệt NHẤT LÀ I++
+while (i < 1000) { //  i<= 1000
+  i++;             // i++ sẽ chuyễn xuống dưới log
+console.log(i);
+}
+// có thể lặp qua array
+var myArray = [
+  'Javascript' /// LẤY ĐC HAI PHẦN TỬ 
+  'PHP'
+];
+var i = 0;
+while (i < myArray.length) {
+  console.log(myArray[i]);
+  i++;
+}
+//do/while lặp ít nhất 1 lần sau đó lặp đk true
+var i= 0;
+var isSuccess = false;
+
+do {
+   i++;
+  console.log('Nạp thẻ lần ' + i);
+  if (false) {
+    isSuccess = true;
+  }
+
+}while (!isSuccess && i <=3);
+
+// break & continue in loop  và 
+// break thoát khỏi vòng lặp
+for ( var i = 0; i < 10; i++) {
+  console.log(i);
+  if (i>= 5) {
+    break;
+  }
+}
+// continue;bỏ qua một vài vòng lặp
+
+for ( var i = 0; i < 10; i++) {
+if (i%2 !== 0) {
+  continue;
+}
+  console.log(i);
+}
+//vòng lặp lồng nhau nested loop
+var myArray = [
+  [1,2],
+  [3,4],
+  [5,6]
+];
+for (var i = 0; i < myArray.length; i++) {
+  for (var j = 0; j < myArray[i].length; j++ ) {
+    console.log((myArray[i [j]]);
+}
+}
+//ví dụ thêm
+//in từ 100 về 1
+for (var i = 100; i > 0; i--) {
+  console.log(i);
+}
+//in ra giá trị 0,5,10,15 tăng lên 5
+for ( var i = 0; i <=5) {
+  console.log(i);
+}
