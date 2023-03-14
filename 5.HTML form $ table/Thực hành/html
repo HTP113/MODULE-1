@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advanced</title>
+</head>
+
+<body>
+    <style>
+        body {
+            padding: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        th {
+            font-family: 'Patua One', cursive;
+            font-size: 15px;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+            background-color: #d61b06;
+            border-color: white;
+        }
+
+        td {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #5f6062;
+            padding: 20px 20px 20px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+        }
+    </style>
+    <h2>Thời khóa biểu</h2>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Thứ</th>
+            <th colspan="2">Hoạt động</th>
+        </tr>
+        <tr>
+            <th>Sáng</th>
+            <th>Chiều</th>
+        </tr>
+        <tr>
+            <td>Thứ hai</td>
+            <td>Thể dục</td>
+            <td>HD trò chơi mới</td>
+        </tr>
+        <tr>
+            <td>Thứ ba</td>
+            <td>Nhận biết tập nói</td>
+            <td>Rèn nề nếp,kỹ năng sống</td>
+        </tr>
+        <tr>
+            <td>Thứ tư</td>
+            <td>Âm nhạc</td>
+            <td>Vui chơi</td>
+        </tr>
+        <tr>
+            <td>Thứ năm</td>
+            <td>Văn học</td>
+            <td>Nhận biết các giá trị sống</td>
+        </tr>
+    </table>
+</body>
+
+</html>

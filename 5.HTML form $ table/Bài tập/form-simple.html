@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1 {
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        width: 920px;
+        height: 250px;
+        border: 40px solid paleturquoise;
+        border-top: 20px solid paleturquoise;
+        padding: 5px;
+    }
+
+    #h1 {
+        background-color: orangered;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #profile {
+        width: 200px;
+        float: left;
+        text-align: right;
+    }
+
+    #hobly {
+        color: orange;
+        width: 680px;
+        float: right;
+        text-align: left;
+
+    }
+    #div2{
+        color: blue;
+        background-color: lemonchiffon;
+        width:700px; height: 880px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 10px;
+    }
+   #h2{
+    background-color: aquamarine;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 100;
+    width: 700px;
+   }
+   #profile2{
+    width: 100px;
+    float: left;
+    text-align: right;  
+   }
+   #hobly2{
+color: black;
+width: 350px;
+float: right;
+text-align: left;
+
+
+   }
+   
+</style>
+
+<body>
+    <div id="div1">
+        <form action="" method="post">
+            <div id="h1">
+                <h1>SỞ THÍCH CỦA BẠN</h1>
+            </div> <br>
+            <div id="profile">
+                Họ và tên <br><br>
+                Email<br><br>
+                Sở thích<br><br>
+            </div>
+            <div id="hobly">
+                <input type="text" name="Hovaten" placeholder="yourname"> <br><br>
+                <input type="text" name="Email" placeholder="email"> <br><br>
+                <input type="checkbox" name="hobly">Thể thao
+                <input type="checkbox" name="hobly">Âm nhạc
+                <input type="checkbox" name="hobly">Đọc sách <br>
+                <input type="checkbox" name="hobly">Lướt web
+                <input type="checkbox" name="hobly">Chơi game
+                <input type="checkbox" name="hobly">Điện ảnh <br>
+                <input type="checkbox" name="hobly">Du lịch <br>
+                <input type="submit" name="Submit Form" value="Gửi thông tin">
+                <input type="reset" name="Reset Form" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+    <br>
+
+</body>
+<div id="div2">
+    <form action="" method="post">
+        <div id="h2">
+            <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+        </div>
+        <div id="profile2">
+Họ và tên <br><br>
+Ngày sinh <br><br>
+Giới tính<br><br>
+Địa chỉ<br><br><br><br>
+Lớp<br><br>
+Email<br><br>
+Điện thoại<br><br>
+        </div>
+        <div id="hobly2">
+<input type="text" name="hovaten" placeholder="yourname"> <br><br>
+<input type="text" name="ngaysinh" placeholder="Ngày sinh"><br><br>
+<input type="radio" name="radio">Nam 
+<input type="radio" name="radio">Nữ <br><br>
+<textarea name="diachi" id="" cols="35" rows="6"></textarea> <br><br>
+<select name="lop" id="">
+    <option value="0">-Chọn lớp-</option>
+    <option value="1">A</option>
+    <option value="2">B</option>
+    <option value="3">C</option>
+</select> <br><br>
+<input type="email" name="email" placeholder="Email"><br><br>
+<input type="phone" name="phone" placeholder="Điện thoại"><br><br>
+<input type="submit" name="Submit Form" value="Đăng ký">
+<input type="reset" name="Reset Form" value="Nhập lại">
+        </div>
+    </form>
+</div>
+
+</html>
