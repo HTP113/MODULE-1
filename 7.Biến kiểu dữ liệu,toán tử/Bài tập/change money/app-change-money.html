@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app-change-money.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>Form</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="number" id="Amount">
+            </td>
+            <td>
+                <select name="" id="FromCurrency">
+                    <option value="VietNam">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="" id="ToCurrency">
+                    <option value="USD">USD</option>
+                    <option value="VietNam">VietNam</option>
+                </select>
+            </td>
+            <td>
+                <button id="btn" onclick="Covert()">Covert</button>
+            </td>
+        </tr>
+    </table>
+<div id="Result"></div>
+<script src="app-change-money.js"></script>
+</body>
+
+</html>
