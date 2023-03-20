@@ -17,14 +17,21 @@
         } esle {
             message = '';
         }*/
-        let login = prompt('Enter:');
-        let message = login == 'Employee' ?
-        'Hello':
-        login == 'Diretor' ?
-         'Greetings':
-         login == '' ?
-         'No login':'';
-         alert(message);
-          </script>
+
+
+        // let login = prompt('Enter:');
+        // let message = login == 'Employee' ?
+        // 'Hello':
+        // login == 'Diretor' ?
+        //  'Greetings':
+        //  login == '' ?
+        //  'No login':'';
+        //  alert(message);
+        //   </script>
+        <script>
+            var login = prompt("Mời bạn nhập :", '');
+            var message = (login == 'Employee') ? 'Hello' : (login == 'Direct')
+            alert(message);
+        </script>
 </body>
 </html>

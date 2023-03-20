@@ -8,18 +8,20 @@
 </head>
 <body>
     <input type="checkbox" id="good" onchange="changeGood()">Good <br>
-    <input type="checkbox" id="fast" onchange="changeFast()">fast <br>
+    <input type="checkbox" id="fast" onchange="changeFast()">Fast <br>
     <input type="checkbox" id="cheap" onchange="changeCheap()">Cheap 
 </body>
 <script>
     function changeGood() {
-        document.getElementById('fast').checked = !document.getElementById('good').checked;
+        console.log(document.getElementById('fast').value);
+        console.log(document.getElementById('good').value, " document.getElementById('good').value");
+        document.getElementById('fast').value = !document.getElementById('good').value ;
     }
     function changeFast() {
-        document.getElementById('cheap').checked = !document.getElementById('fast').checked;
+        document.getElementById('cheap').value  = !document.getElementById('fast').value ;
     }
     function changeCheap() {
-        document.getElementById('good').checked = !document.getElementById('cheap').checked;
+        document.getElementById('good').value  = !document.getElementById('cheap').value ;
     }
 </script>
 

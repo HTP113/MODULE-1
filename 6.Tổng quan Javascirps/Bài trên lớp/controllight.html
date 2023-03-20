@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="light" src="images/on.png" alt="">
+    <button id="switch" onclick="controlLight()">Turn On</button>
+    <script>
+        function controlLight(){
+            if (document.getElementById('switch').innerText == 'Turn On') {
+                document.getElementById("light").src = 'images/on.png';
+                document.getElementById('switch').innerText = 'Turn Off'
+            }
+            else{
+                document.getElementById('light').src = 'images/off.png';
+                document.getElementById('switch').innerText = 'Turn On'
+            }
+
+        }
+        controlLight();
+
+    </script>
+</body>
+
+</html>

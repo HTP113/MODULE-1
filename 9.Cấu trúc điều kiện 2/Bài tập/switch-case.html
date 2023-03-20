@@ -9,10 +9,10 @@
 <body>
     <h3>Kiểm tra số ngày trong tháng</h3>
     <input type="number" min="1" max="12" id="month" placeholder="Nhập tháng" style="width: 100px; height: 50px;">
-    <button onclick="check_month()" style="height:25px">Kiểm tra</button>
+    <button onclick="checkmonth()" >Kiểm tra</button>
     <p id="result">Kết quả</p>
     <script>
-        function check_month(){
+        function checkmonth(){
             let month = Number(document.getElementById('month').value)
             if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12 ){
                 document.getElementById('result').innerHTML = "Tháng " + month + " có 31 ngày"
@@ -28,5 +28,47 @@
             }
         }
     </script>
+    <!-- <script>
+        function checkmonth() {
+    let thang1="1";
+    let thang2="2";
+    let thang3="3";
+    let thang4="4";
+    let thang5="5";
+    let thang6="6";
+    let thang7="7";
+    let thang8="8";
+    let thang9="9";
+    let thang10="10";
+    let thang11="11";
+    let thang12="12";
+    let month = document.getElementById('month').value;
+    switch (month) {
+        case (thang1):
+        case (thang3):
+        case (thang5):
+        case (thang7):
+        case (thang8):
+        case (thang10):
+        case (thang12):
+            result = "Tháng "+month+ " có 31 ngày";
+            break;
+        case (thang2):
+            result = "Tháng "+month+ " có 28 hoặc 29 ngày";           
+            break;
+        case (thang4):
+        case (thang6):
+        case (thang9):
+        case (thang11):
+            result = "Tháng "+month+ " có 30 ngày";            
+            break;
+        default:
+            result = "Vui lòng nhập lại"
+    }
+    document.getElementById('result').innerHTML = result;
+}
+
+    </script> -->
+    
 </body>      
 <html 

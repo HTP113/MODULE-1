@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         let number = prompt('Nhập giá trị:');
         if (number > 0) {
             alert(1);}
@@ -16,6 +16,19 @@
             }else { 
                    alert(0);
             }
+    </script> -->
+    <script>
+        var value = parseInt(prompt('Type a number',));
+        switch ((value > 0) ? 1 : (value < 0) ? - 1 :0){
+            case 1:
+                alert(1);
+                break;
+                case -1:
+                    alert(-1);
+                    break;
+                    default:
+                        alert(0);
+        }
     </script>
 </body>
 </html>

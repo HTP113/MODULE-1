@@ -7,11 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="message"></div>
-    <button type="button" onclick="showmessage();">Click Me</button>
-    <script>function showmessage(){
-            console.log("Xin chào!");
+    <!-- hiển thị kết quả hàm alert
+    <button type="button" onclick="showMessage();">Click Me!
+
+    </button>
+    <script>
+        function showMessage(){
+            alert('Xin chào');
         }
-    </script>
+    </script> -->
+     <!-- hiển thị kết quả sử dụng html
+     <div id="messageDiv"></div>
+     <button type="button" onclick="showMessage();">Click Me!
+
+     </button>
+     <script>
+         function showMessage(){
+             document.getElementById('messageDiv').innerHTML = 'Xin chào';
+         }
+     </script> -->
+     <!-- hiển thị kết quả hàm document.write()
+     
+     <button type="button" onclick="showMessage();">Click Me!
+
+     </button>
+     <script>
+         function showMessage(){
+             document.write('Xin chào')
+         }
+     </script> -->
+
+      <!-- hiển thị kết quả hàm console.log() -->
+     
+     <button type="button" onclick="showMessage();">Click Me!
+
+     </button>
+     <script>
+         function showMessage(){
+             console.log('Xin chào');
+         }
+     </script>
 </body>
 </html> 

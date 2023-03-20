@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         let username = prompt("Who's there?");
         if (username== "Admin") {
             let password = prompt("password?");
@@ -20,6 +20,25 @@
             }
         }
         else if ("I don't know you");
+    </script> -->
+    <script>
+        var userName = prompt("Who's there", '');
+        if (userName == 'admin') {
+            alert('Welcome');
+        }else if (userName == null) {
+            alert("Canceled")
+        }else{
+            alert("I don't know you");
+        }
+        var pass = prompt('Password?', '');
+        if (pass == 'theMaster'){
+            alert('Welcome');
+        }else if(pass == null){
+            alert('Canceled');
+        }else{
+            alert('Wrong password');
+        }
+
     </script>
 </body>
 </html>
