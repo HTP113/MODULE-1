@@ -25,34 +25,48 @@ là index or key
  ];
 **toString  chuyển kiểu dữ liệu languages sang String
  //console.log(languages.toString()) chứng minh thêm chữ typeof truoc chữ languages
+
  **join giống kiểu totring nhưng khi thêm ( ', ') thì cách phần tử cách đẹp hơn
  //console.log(languages.join()) 
+
  **pop xóa phần tử cuối mảng và trả phần tử đã xóa 
  //console.log(languages.pop()) khi xóa hết thì trả về undefined
+
 **push thêm một or nhiều item cuối array
 //console.log(languages.push('Dart')) , ra add nhiều
+
 ** shift ngược lại của pop xóa phần tủ đầu và trả item đã xóa
 //console.log(languages.shift())
+
 **unshift thêm 1 or n item đầu mảng và trả về độ dài mới của array
 //console.log(languages.unshift()) ,add n item
+
 **splicing xóa cắt và  chèn item vào array gọi là SPLICE
 //languages.splice(1, 1) xóa đi vị trí bất kì của item trong array
+
+
 //console.log(languages) còn 0 thì ko xóa item nào
 //languages.splice(1, 0, 'Dart') thêm 1 item vào  đầu [1]
+
 //console.log(languages) số 1 đầu tiên là vị trí con trỏ đặt
 //languages.splice(1, 1, 'Dart') thì item [1] cũ mất đi thay item vừa add 
+
 ** concat nối các array
 //var languages = [
   //  'Javascript',
  //   'PHP',
  //   'Ruby',
 // ];
+
+
 // 2 array nối giữa concat [jv,php,ruby,d]
 //var languages2 = [
  //   'Dart',
  //   'css',
 //];
 //console.log(languages.cocat(languages2))
+
+
  **slcing cắt item của array có thể cắt xuôi cắt ngược gọi là SLICE
 console.log(languages.slice(1, 2))  //cắt đi chữ PHP
 
