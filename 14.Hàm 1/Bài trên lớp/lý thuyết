@@ -1,0 +1,127 @@
+//**HÀM */
+// function là 1 nhóm các câu lẹnh thực thi 1 nhiệm vụ nhất định
+-// là một thuật ngữ sd phổ biến trong lập trình hướng đối tượng
+//sd phương thức method và thủ tục procedure
+//console.log();Math.pow();Math.random() LÀ các hàm đẫ định sẳn cho we sd
+
+// ý nghĩa thiết kế giải pháp theo hướng chia để trị là chia nhỏ từ trên xuongs dưới
+//tái sd code
+// 
+
+//tên tuân thủ quy tắt đặt tên java bắt đầu bẳng 1 "ĐỘNG TỪ"
+
+
+// ### Biến toàn cục:
+// Biến toàn cục (global variable): là biến được khai báo và sử dụng trong phạm vi toàn bộ chương trình, bao gồm các hàm và lớp.
+//  Một biến toàn cục có thể được truy cập và thay
+//  đổi giá trị của nó bất kỳ khi nào trong chương trình.
+// # Đây là một biến toàn cục
+// x = 10
+
+// def print_x():
+//     print(x)  # Truy cập biến toàn cục x
+
+// def change_x():
+//     global x
+//     x = 20   # Thay đổi giá trị biến toàn cục x
+
+// print_x()   # In ra giá trị của biến toàn cục x (10)
+// change_x()  # Thay đổi giá trị của biến toàn cục x thành 20
+// print_x()   # In ra giá trị của biến toàn cục x (20)
+// ### Biến cục bộ
+
+// Biến cục bộ (local variable): là biến được khai báo và sử dụng trong phạm vi của một hàm hoặc một khối
+//  lệnh. Biến cục bộ chỉ có thể truy cập và sử dụng trong phạm vi của nó và 
+//  không thể truy cập từ các hàm hoặc khối lệnh khác.
+
+//  def print_x():
+//     # Đây là một biến cục bộ
+//     x = 10
+//     print(x)  # Truy cập biến cục bộ x
+
+// def change_x():
+//     # Đây cũng là một biến cục bộ
+//     x = 20   # Khai báo và sử dụng biến cục bộ x trong hàm này
+//     print(x)
+
+// print_x()   # In ra giá trị của biến cục bộ x (10)
+// change_x()  # In ra giá trị của biến cục bộ x (20)
+// print_x()   # In ra giá trị của biến cục bộ x (10), không bị thay đổi bởi hàm change_x()
+// ### Quy tắc đặt tên hàm
+// printMultiple("Hello")
+// + bắt đầu động từ, sau sau là danh từ 
+// + theo quy tắc lạc đà
+
+// ### Thứ tự truyền đối số
+// // SỐ ĐỐI là các  gt đc trn vào argument
+
+// ### Hãy nói về return đi
+// Return là việc trả về kết quả của hàm đã định
+// nghĩa 
+
+// ### Hãy nói về tham số và gọi hàm đi
+// // THAM SỐ(parameter)  là các biến đc khai báo trong phần header
+
+// //GỌI HÀM  là cách thực thi 1 hàm đã đc đn trc đó khi gọi cần trn s
+
+
+// ### let với var khác nhau ở đâu, có mấy điểm chính
+// //---------------let không cho khai báo lại
+// let total = 0;              
+// for(let i=1;i<=10;i++){
+//     total += i;
+// }
+// let total;
+
+// //--------var có thể cho khai báo lại
+// var total = 0;              
+// for(let i=1;i<=10;i++){
+//     total += i;
+// }
+// var total = 7;
+// //---------------Trường hợp đặc biệt: không quan tâm
+// var total= 0;  
+// let total = 7;
+// console.log(total);
+
+// //-------------khai báo var trong blockcode ({})  thì nó hoisting - trồi lên
+// if(1>0){
+//     {
+//         {
+//             var total = 10;   //hoisting: trồi lên ra tới toàn cục
+//         }
+//     }
+    
+// }
+// console.log("total: " + total);
+// //----------------Khai báo let trong blockcode thì chỉ có phạm vi trong đó thôi
+// if(1>0){
+//     let total = 10;
+// }
+// console.log("total: " + total);
+//  */        
+
+// Var ở phạm vi toàn cục có thể gán lại và khai báo lại
+
+// Let phạm vi khối có thể gán nhưng không thể khai báo lại
+// còn thêm trường hợp const
+// Const phạm vi khối không thể gán và cũng kh thể khai báo lại
+
+
+
+
+// ### Truyền tham trị là như thế nào?
+// Tham trị là việc ta truyền giá trị vào hàm số (giá trị bên ngoài k thay đổi)
+// Tham trị:  tạo ra 1 vùng nhớ mới mượn giá trị 
+// Khi thay đổi địa chỉ này thì địa chỉ kia k bị thay đổi
+
+// ### Truyền tham chiếu là như thế nào?
+// Tham chiếu là truyền biến vào. (giá trị hàm thay đổi thì biên bên ngoài theo)
+// Tham chiếu: tức là sẽ copy địa chỉ nhớ ra thành 1 địa chỉ mới nhưng cả 2 địa chỉ cùng
+// trỏ vô 1 vùng nhớ duy nhất 
+// Nếu thay đổi dử liệu 1 cái thì cái còn lại cũng sẽ bị thay đổi
+
+
+// ### Các bước để viết một hàm
+// hàm gồm có -nhiệm vụ -tên hàm-đầu vào -đầu ra
+// + thảnh phần quan trọng :tên ,tham số ,phân thân hàm
